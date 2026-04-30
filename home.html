@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pa' Ganar Play - Red Nacional de Loterías</title>
+    <meta name="description" content="Únete a la Red Nacional Pa' Ganar Play y genera ingresos extra con la venta de lotería legal. Tecnología móvil y puntos de venta inteligentes SUNMI.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><img src="./images/logopaganar.png" alt="" class="paganarlogo"></div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#aliado">Sé un Aliado</a></li>
+            <li><a href="#hardware">Hardware</a></li>
+            <li><a href="#juegos">Juegos y Comisiones</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+        </ul>
+        <a href="#registro" class="btn btn-primary">¡Únete a la Red Nacional!</a>
+    </nav>
+
+    <!-- Hero -->
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-up">Lleva la <span class="gradient-text">Lotería Legal</span> a tu Comunidad y Genera Ingresos Extra</h1>
+            <p class="animate-up delay-1">Una plataforma diseñada para expandir los juegos autorizados por <strong>CONALOT</strong> en zonas populares, brindando oportunidades de empleo a través de tecnología móvil y puntos de venta inteligentes.</p>
+            <div class="hero-buttons animate-up delay-2">
+                <a href="#registro" class="btn btn-primary lg">Afiliar mi Agencia</a>
+                <a href="#aliado" class="btn btn-secondary lg">Conoce el Modelo</a>
+            </div>
+        </div>
+        <div class="hero-visual animate-up delay-3">
+            <img src="images/hero_composition.png" alt="Pa' Ganar Play en celular y SUNMI" class="hero-img glass">
+        </div>
+    </header>
+
+    <!-- Modelo de Negocio -->
+    <section id="aliado" class="features" style="background-color: var(--bg-dark);">
+        <div class="section-header">
+            <h2 class="animate-up">Modelo de Negocio: <span class="highlight">Oportunidades de Empleo</span></h2>
+            <p class="animate-up delay-1">Pa' Ganar Play es el aliado ideal para emprendedores. Descubre por qué unirte a nosotros cambiará tu economía.</p>
+        </div>
+        <div class="grid">
+            <div class="feature-card glass-hover animate-up delay-1">
+                <div class="icon-wrapper">📱</div>
+                <h3>Venta desde tu Celular</h3>
+                <p>Ideal para puntos ambulantes y personas que desean generar comisiones sin necesidad de un espacio físico. Tu celular es tu agencia.</p>
+            </div>
+            <div class="feature-card glass-hover animate-up delay-2">
+                <div class="icon-wrapper">🏪</div>
+                <h3>Complemento para Comercios</h3>
+                <p>La solución perfecta para negocios establecidos (abastos, panaderías, farmacias) que quieren diversificar sus ingresos sin inversión extra.</p>
+            </div>
+            <div class="feature-card glass-hover animate-up delay-3">
+                <div class="icon-wrapper">🚀</div>
+                <h3>Sin Barreras Logísticas</h3>
+                <p>Llegamos a donde la agencia tradicional no llega, eliminando las limitaciones de infraestructura física. Operatividad inmediata.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnología y Hardware -->
+    <section id="hardware" class="features">
+        <div class="section-header">
+            <h2 class="animate-up">Tecnología y Hardware: <span class="highlight">Ecosistema Pa' Ganar</span></h2>
+            <p class="animate-up delay-1">Herramientas profesionales diseñadas para facilitar tu trabajo y garantizar seguridad en cada transacción.</p>
+        </div>
+        <div class="ecosystem-flex">
+            <div class="eco-item glass-hover animate-up">
+                <div class="eco-icon">💻</div>
+                <div class="eco-content">
+                    <h3>Software Pa' Ganar Play</h3>
+                    <p>Aplicación intuitiva y ultra-rápida para la comercialización ágil de sorteos. Interfaz sencilla diseñada para vender sin demoras.</p>
+                </div>
+            </div>
+            <div class="eco-item glass-hover animate-up delay-1">
+                <div class="eco-icon">🖨️</div>
+                <div class="eco-content">
+                    <h3>Dispositivos SUNMI (No Bancarios)</h3>
+                    <p>Hardware profesional con impresora térmica integrada para entregar tickets físicos en comercios, brindando total confianza al jugador.</p>
+                </div>
+            </div>
+            <div class="eco-item glass-hover animate-up delay-2">
+                <div class="eco-icon">🤖</div>
+                <div class="eco-content">
+                    <h3>Gestión Automatizada</h3>
+                    <p>Conciliación bancaria automática y pago de premios automatizado para tu tranquilidad, seguridad y control financiero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Juegos Disponibles y Galería -->
+    <section id="juegos" class="features" style="background-color: var(--bg-dark);">
+        <div class="section-header">
+            <h2 class="animate-up">Catálogo de <span class="highlight">Juegos</span></h2>
+            <p class="animate-up delay-1">Explora nuestra variedad de sorteos autorizados con las mejores cuotas y resultados al instante.</p>
+        </div>
+
+        <!-- Game Slider Container -->
+        <div class="slider-wrapper animate-up delay-2">
+            <button class="slider-btn prev" id="prevGame">‹</button>
+            <div class="games-slider" id="gamesSlider">
+                <!-- Game Card 1 -->
+                <div class="game-card glass-hover">
+                    <div class="game-img">
+                        <img src="images/triplecentena.jpeg" alt="Triple Centena">
+                    </div>
+                    <div class="game-info">
+                        <h3>Triple Centena</h3>
+                        <p>El sorteo clásico con los mejores aciertos.</p>
+                    </div>
+                </div>
+                <!-- Game Card 2 -->
+                <div class="game-card glass-hover">
+                    <div class="game-img">
+                        <img src="images/centenaplus.jpeg" alt="Centena Plus">
+                    </div>
+                    <div class="game-info">
+                        <h3>Centena Plus</h3>
+                        <p>Multiplica tus oportunidades con el sistema Plus.</p>
+                    </div>
+                </div>
+                <!-- Game Card 3 -->
+                <div class="game-card glass-hover">
+                    <div class="game-img">
+                        <img src="images/centenaanimal.jpeg" alt="Centena Animal">
+                    </div>
+                    <div class="game-info">
+                        <h3>Centena Animal</h3>
+                        <p>Tus animalitos favoritos en formato centena.</p>
+                    </div>
+                </div>
+                <!-- Game Card 4 -->
+                <div class="game-card glass-hover">
+                    <div class="game-img-placeholder">
+                        <span>Imagen: Zoo Millonario</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>Zoo Millonario</h3>
+                        <p>El sorteo de animalitos con más tradición.</p>
+                    </div>
+                </div>
+                <!-- Game Card 5 -->
+                <div class="game-card glass-hover">
+                    <div class="game-img-placeholder">
+                        <span>Imagen: La Granjita</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>La Granjita</h3>
+                        <p>Gana con los personajes de la granja.</p>
+                    </div>
+                </div>
+                <!-- Game Card 6 -->
+                <div class="game-card glass-hover">
+                    <div class="game-img-placeholder">
+                        <span>Imagen: Lotto Activo</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>Lotto Activo</h3>
+                        <p>Resultados cada hora y múltiples premios.</p>
+                    </div>
+                </div>
+                <!-- Game Card 7 -->
+                <div class="game-card glass-hover">
+                    <div class="game-img-placeholder">
+                        <span>Imagen: Ruleta Activa</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>Ruleta Activa</h3>
+                        <p>La emoción de la ruleta en tus manos.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn next" id="nextGame">›</button>
+        </div>
+
+        <div class="section-header" style="margin-top: 6rem; margin-bottom: 3rem;">
+            <h2 class="animate-up">Beneficios de <span class="highlight">Nuestra Red</span></h2>
+        </div>
+        
+        <div class="grid">
+            <div class="feature-card glass-hover animate-up">
+                <div class="icon-wrapper">💰</div>
+                <h3>Sistema de Incentivos</h3>
+                <p>Obtén bonificaciones adicionales y premios especiales por cumplimiento de metas de venta. ¡Tu esfuerzo se recompensa de inmediato!</p>
+            </div>
+            <div class="feature-card glass-hover animate-up delay-1">
+                <div class="icon-wrapper">⚖️</div>
+                <h3>Legalidad Total</h3>
+                <p>Todos los juegos cuentan con el respaldo de <strong>CONALOT</strong>, garantizando una operación 100% transparente y segura para ti y el jugador.</p>
+            </div>
+            <div class="feature-card glass-hover animate-up delay-2">
+                <div class="icon-wrapper">🚀</div>
+                <h3>Crecimiento Constante</h3>
+                <p>Únete a la red con mayor proyección nacional y expande tu negocio con nuevas herramientas digitales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="features faq-section">
+        <div class="section-header">
+            <h2 class="animate-up">Preguntas <span class="highlight">Frecuentes</span></h2>
+            <p class="animate-up delay-1">Aclara tus dudas sobre el modelo de negocio y únete hoy mismo a Pa' Ganar Play.</p>
+        </div>
+        <div class="faq-container animate-up delay-2">
+            <div class="faq-item glass">
+                <div class="faq-question">
+                    <h3>¿Necesito un local físico para vender?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>No, puedes vender de forma ambulante directamente desde tu celular con la App. Si tienes un negocio establecido, nuestra plataforma también es el complemento perfecto para diversificar tus ingresos.</p>
+                </div>
+            </div>
+            <div class="faq-item glass">
+                <div class="faq-question">
+                    <h3>¿Cómo cobro mis comisiones?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Las comisiones se manejan a través de un sistema de pago con conciliación bancaria automática. Tendrás reportes transparentes y el dinero disponible rápidamente y sin complicaciones.</p>
+                </div>
+            </div>
+            <div class="faq-item glass">
+                <div class="faq-question">
+                    <h3>¿Cómo se pagan los premios a los ganadores?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Contamos con un sistema automatizado para el pago de premios. Esto garantiza agilidad y elimina los riesgos de manejar grandes cantidades de efectivo, brindando seguridad y confianza al cliente y al vendedor.</p>
+                </div>
+            </div>
+            <div class="faq-item glass">
+                <div class="faq-question">
+                    <h3>¿El equipo SUNMI es un punto bancario?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>No, los dispositivos SUNMI son hardware de última tecnología exclusivo para la comercialización de lotería y la impresión térmica de tickets físicos. No procesan tarjetas bancarias, operan únicamente con el saldo de la plataforma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Registro -->
+    <section id="registro" class="cta-section">
+        <div class="cta-box glass form-container">
+            <h2>¡Únete a la Red Nacional!</h2>
+            <p style="margin-bottom: 2.5rem;">Sé dueño de tu propio negocio de lotería legal. Llena tus datos y un asesor te contactará para activar tu cuenta.</p>
+            
+            <form id="registro-form" class="registration-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cedula">Cédula de Identidad</label>
+                        <input type="text" id="cedula" name="cedula" placeholder="Ej. V-12345678" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="estado">Estado</label>
+                        <select id="estado" name="estado" required>
+                            <option value="" disabled selected>Selecciona tu Estado</option>
+                            <option value="Distrito Capital">Distrito Capital</option>
+                            <option value="Miranda">Miranda</option>
+                            <option value="Carabobo">Carabobo</option>
+                            <option value="Zulia">Zulia</option>
+                            <option value="Lara">Lara</option>
+                            <option value="Otro">Otro estado...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="municipio">Zona / Municipio</label>
+                        <input type="text" id="municipio" name="municipio" placeholder="Ej. Chacao" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipo_comercio">Tipo de Comercio</label>
+                        <select id="tipo_comercio" name="tipo_comercio" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="Ambulante / Vendedor Libre">Ambulante / Vendedor Libre</option>
+                            <option value="Local Establecido">Local Establecido</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="equipo">Equipo de Interés</label>
+                        <select id="equipo" name="equipo" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="App Móvil (Celular)">App Móvil (Celular)</option>
+                            <option value="Dispositivo SUNMI con impresora">Dispositivo SUNMI con impresora</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje o Dudas Adicionales (Opcional)</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escribe aquí si tienes alguna duda adicional..."></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary btn-pdf" title="Descargar PDF Informativo">📄 Flyer Informativo</button>
+                    <button type="submit" class="btn btn-primary pulse submit-btn">Enviar Solicitud</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="logo" style="margin-bottom: 1rem;">Pa'<span class="highlight">Ganar Play</span></div>
+                <p style="font-size: 0.9rem; margin-bottom: 0;">Una solución desarrollada por <strong>Inversiones Oristano, C.A.</strong></p>
+                <p style="font-size: 0.9rem;">RIF: J-50000000-0</p>
+            </div>
+            <div class="footer-links">
+                <h4>Contacto Directo</h4>
+                <ul>
+                    <li><a href="https://wa.me/580000000000" class="footer-link">📱 Soporte vía WhatsApp</a></li>
+                    <li><a href="mailto:soporte@paganar.com" class="footer-link">✉️ soporte@paganar.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-trust">
+                <h4>Avalado por</h4>
+                <div class="trust-badges">
+                    <div class="badge">🛡️ CONALOT</div>
+                    <div class="badge">🏛️ RUNLOT</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pa' Ganar Play - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
