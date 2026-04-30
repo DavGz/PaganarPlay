@@ -1,4 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Mobile Menu Logic
+    const menuToggle = document.getElementById('mobile-menu');
+    const navContainer = document.querySelector('.nav-container');
+    const navLinks = document.querySelectorAll('.nav-links a, .nav-cta');
+
+    if (menuToggle && navContainer) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('is-active');
+            navContainer.classList.toggle('is-active');
+            document.body.style.overflow = navContainer.classList.contains('is-active') ? 'hidden' : '';
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('is-active');
+                navContainer.classList.remove('is-active');
+                document.body.style.overflow = '';
+            });
+        });
+    }
+
     // Intersection Observer para animaciones al hacer scroll
     const observerOptions = {
         root: null,
