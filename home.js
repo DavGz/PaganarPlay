@@ -113,6 +113,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Steps Slider Logic
+    const stepsSlider = document.getElementById('stepsSlider');
+    const nextStepBtn = document.getElementById('nextStep');
+    const prevStepBtn = document.getElementById('prevStep');
+
+    if (stepsSlider && nextStepBtn && prevStepBtn) {
+        nextStepBtn.addEventListener('click', () => {
+            stepsSlider.scrollLeft += 390;
+        });
+
+        prevStepBtn.addEventListener('click', () => {
+            stepsSlider.scrollLeft -= 390;
+        });
+    }
+
     // Navbar background change on scroll
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
