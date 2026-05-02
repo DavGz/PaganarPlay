@@ -19,7 +19,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.tuto {
+  width: 225px;
+}
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--bg-darker);
@@ -333,7 +335,8 @@ p {
 }
 
 .game-card {
-  min-width: 350px;
+  width: 255px;
+  min-width: 370px;
   flex: 0 0 auto;
   background: var(--bg-dark);
   border: 1px solid var(--glass-border);
@@ -379,11 +382,7 @@ p {
 .game-img-placeholder {
   width: 100%;
   height: 500px;
-  background: linear-gradient(
-    135deg,
-    rgba(99, 102, 241, 0.1),
-    rgba(139, 92, 246, 0.1)
-  );
+  background: linear-gradient(135deg, rgb(23 18 42 / 28%), rgb(18 13 29 / 19%));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -852,7 +851,9 @@ footer {
     gap: 2.5rem;
   }
 
-  .footer-info, .footer-links, .footer-trust {
+  .footer-info,
+  .footer-links,
+  .footer-trust {
     align-items: center;
   }
 
