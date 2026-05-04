@@ -85,6 +85,9 @@ document.addEventListener("DOMContentLoaded", () => {
     registroForm.addEventListener("submit", (e) => {
       e.preventDefault();
 
+      const formData = new FormData(registroForm);
+      const data = Object.fromEntries(formData.entries());
+
       // Simulación de envío
       const submitBtn = registroForm.querySelector(".submit-btn");
       const originalText = submitBtn.textContent;
@@ -92,15 +95,36 @@ document.addEventListener("DOMContentLoaded", () => {
       submitBtn.disabled = true;
       submitBtn.textContent = "Enviando...";
 
+      // Mostramos un SweetAlert de carga
+      Swal.fire({
+        title: "Procesando solicitud...",
+        text: "Estamos preparando tus datos para el envío.",
+        allowOutsideClick: false,
+        showConfirmButton: false,
+        willOpen: () => {
+          Swal.showLoading();
+        },
+      });
+
       // Simular delay de red
       setTimeout(() => {
-        alert(
-          "¡Gracias por tu interés! Un asesor de Pa' Ganar Play se pondrá en contacto contigo pronto.",
-        );
+        // En un caso real, aquí enviaríamos el objeto 'data' (JSON) a un servidor
+        console.log("Datos enviados (JSON):", data);
+
+        Swal.fire({
+          icon: "success",
+          title: "¡Solicitud Enviada!",
+          text: `Gracias ${data.nombre}. Tus datos han sido recibidos correctamente y un asesor te contactará pronto para activar tu cuenta.`,
+          confirmButtonColor: "#6366f1",
+          confirmButtonText: "Entendido",
+          background: "#0f172a",
+          color: "#f8fafc"
+        });
+
         registroForm.reset();
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
-      }, 1500);
+      }, 2000);
     });
   }
 
